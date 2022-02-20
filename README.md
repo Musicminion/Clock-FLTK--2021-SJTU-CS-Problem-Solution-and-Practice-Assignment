@@ -1,7 +1,11 @@
 # Clock-FLTK--2021-SJTU-CS-Problem-Solution-and-Practice-Assignment
 A dynamatic clock designed by me.
 
-任务二练习的是动态界面与时间的读取。特别注意的是
+![task2](https://user-images.githubusercontent.com/84625273/154828078-cd7dcd8d-4a8a-4892-b16a-b06eb6aa1607.png)
+
+
+
+这次的GUI开发练习的是动态界面与时间的读取。特别注意的是
 
 - 关于`sleep` 的问题：值得强调的是 `sleep` 一旦调用整个线程被挂起，如果前面不写 `FL::wait()` ， 整个界面会白屏，应为其他的工具不能正常运行。
 - 关于部分文字会滞留在界面的问题：需要使用动态数组`vector`， 每次刷新之前，动态数组里面的元素必须全部清空，因为这些变量是必须要全部重新绘制的，重新刷新即可。
